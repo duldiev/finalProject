@@ -17,7 +17,7 @@
         .course{
             width: 80%;
             margin: auto;
-            padding-top: 100px;
+            padding-top: 50px;
             text-align: center;
         }
         .row{
@@ -45,6 +45,10 @@
             background-position: center;
             background-size: cover;
         }
+        .content-container {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
     </style>
 </head>
 <body>
@@ -71,23 +75,23 @@
         {% block content %}
         {% endblock %}
     </div>
-    <content>
-        <section class="course">
+    <content class="content-container">
+        <section class="course" style="color: aliceblue;">
             <h1>Love you, guys!</h1>
             <p>This group's students make me smile:)</p>
         </section>
         <div class="row">
             <div class="course-col">
-                <h3>Calm</h3>
-                <p>omir keremet! World's simplest online text line randomizer for web developers and programmers. Just paste your text in the form below, press the Randomize Lines button, and you'll get shuffled lines. Press a button – get random lines. No ads, nonsense or garbage.</p>
+                <h3>Concept</h3>
+                <p>The concept of matching text to relevant images is a common task in natural language processing and computer vision. There are many potential use cases for this type of application, such as image search engines, image annotation, and automated image captioning. The ability to match text to relevant images can also be used in various fields such as advertising, e-commerce, and social media.</p>
             </div>
             <div class="course-col">
-                <h3>Love</h3>
-                <p>omir keremet! World's simplest online text line randomizer for web developers and programmers. Just paste your text in the form below, press the Randomize Lines button, and you'll get shuffled lines. Press a button – get random lines. No ads, nonsense or garbage.</p>
+                <h3>Models</h3>
+                <p>The use of machine learning models to match text to images is a common approach in this field. The model is trained on a dataset of images and their associated captions, which allows it to learn the relationship between text and images. The use of convolutional neural networks (CNNs) is a popular choice for image classification tasks because they are able to effectively extract features from images. Transfer learning is also commonly used, where a pre-trained model is fine-tuned on a new dataset, which can save time and resources.     </p>
             </div>
             <div class="course-col">
-                <h3>Patient</h3>
-                <p>omir keremet! World's simplest online text line randomizer for web developers and programmers. Just paste your text in the form below, press the Randomize Lines button, and you'll get shuffled lines. Press a button – get random lines. No ads, nonsense or garbage.</p>
+                <h3>Process</h3>
+                <p>In this project, the user input a text, the text will be processed, and the relevant image will be returned to the user, this process uses machine learning model that was trained on a dataset of images and captions using CNN and transfer learning techniques.</p>
             </div>
         </div>
     </content>
