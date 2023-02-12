@@ -53,8 +53,8 @@
             background-size: cover;
         }
         .content-container {
-            margin-left: 50px;
-            margin-right: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
     </style>
 </head>
@@ -67,7 +67,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-md-auto gap-2">
+                <ul class="navbar-nav ms-md-auto gap-2 bg-grey">
                     <li class="nav-item rounded">
                         <a class="nav-link active" aria-current="page" href="/">CNN Image classifier</a>
                     </li>
@@ -78,11 +78,6 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid" style="margin-top: 50px;">
-        {% block content %}
-        {% endblock %}
-    </div>
-
     <content class="content-container">
         <section class="course" style="color: aliceblue;">
             <h1>Welcome, dear user!</h1>
@@ -102,6 +97,13 @@
                 <p>In this project, the user input a text, the text will be processed, and the relevant image will be returned to the user, this process uses machine learning model that was trained on a dataset of images and captions using CNN and transfer learning techniques.</p>
             </div>
         </div>
+        <section class="last" style="color: aliceblue;">
+            
+        </section>
     </content>
+    <div class="container-fluid" style="margin-top: 50px; padding-left: 80px; padding-right: 80px;">
+        {% block content %}
+        {% endblock %}
+    </div>
 </body>
 </html>
