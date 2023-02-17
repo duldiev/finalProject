@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
 
+
+
 .frame {
 	position: absolute;
 	top: 50%;
@@ -14,6 +16,10 @@
 	background: linear-gradient(to top right, darkmagenta 0%, hotpink 100%);
 	color: #333;
 	font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.main-container {
+	background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.xtrafondos.com%2Fen%2Fwallpaper%2F2560x1600%2F7862-hello-kitty.html&psig=AOvVaw1ogOVrVdouXyPz2fQOucgm&ust=1676314446059000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKiWvorUkP0CFQAAAAAdAAAAABAD)
 }
 
 .center {

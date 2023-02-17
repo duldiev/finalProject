@@ -1,6 +1,6 @@
 {% extends 'plain.html' %}
 {% block content %}
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center" style="background-color: #BFACE2;">
         <form method="post" enctype="multipart/form-data" action="classifyImg">
             {% csrf_token %}
             <h3>Upload your file here:</h3><br>
@@ -17,10 +17,13 @@
     </div>
     {% if image != "" %}
         <div class="container bg-grey container-fluid h-100"><br>
-            <p><h2>The image more likely:</h2><h1>{{ label }}</h1></p>
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ image }}" class="card-img-top" alt="{{ label }}">
-                </div>
+            <p>
+                <h2 style="color: aliceblue;">The image more likely:</h2>
+                <h1 style="color: aliceblue;">{{ label }}</h1>
+            </p>
+            <div class="card" style="width: 18rem;">
+                <img src="{{ image }}" class="card-img-top" alt="{{ label }}">
+            </div>
             <br><br>
         </div>
     {% endif %}
